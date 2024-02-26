@@ -13,9 +13,8 @@
         android:theme="@style/Theme.Mvvm_template"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name="co.kr.hoigas.mvvm.presentation.MainActivity"
             android:exported="true"
-            android:label="@string/app_name"
             android:theme="@style/Theme.Mvvm_template">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
