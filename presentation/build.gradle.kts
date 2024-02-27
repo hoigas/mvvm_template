@@ -45,6 +45,7 @@ dependencies {
 
     implementation(Dependency.KTX.CORE)
     implementation(Dependency.KTX.LIFECYCLE_RUNTIME)
+
     implementation(Dependency.AndroidX.ACTIVITY)
 
     implementation(platform(Dependency.Compose.BOM))
@@ -57,6 +58,9 @@ dependencies {
 
     androidTestImplementation(Dependency.AndroidTest.TEST_JUNIT)
     androidTestImplementation(Dependency.AndroidTest.ESPRESSO_CORE)
-    androidTestImplementation(platform(platform(Dependency.Compose.BOM)))
+
+    androidTestImplementation(platform(Dependency.Compose.BOM))
     androidTestImplementation(Dependency.AndroidTestCompose.TEST_JUNIT4)
+    debugImplementation(Dependency.DebugCompose.UI_TOOLING)
+    debugImplementation(Dependency.DebugCompose.UI_TEST_MANIFEST)
 }

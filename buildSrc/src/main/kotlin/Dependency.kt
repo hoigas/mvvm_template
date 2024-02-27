@@ -1,7 +1,9 @@
 import Versions.LIFECYCLE_VERSION
+import Versions.NAV_VERSION
 
 object Versions {
     const val LIFECYCLE_VERSION = "2.7.0"
+    const val NAV_VERSION = "2.7.7"
 }
 
 object Dependency {
@@ -43,11 +45,21 @@ object Dependency {
 
     object DaggerHilt {}
 
-    object Retrofit {}
+    object Retrofit {
+        const val RETROFIT = "com.squareup.retrofit2:retrofit:2.9.0"
+        const val CONVERTER_GSON = "com.squareup.retrofit2:converter-gson:2.9.0"
+    }
 
-    object OkHttp {}
+    object OkHttp {
+        const val BOM = "com.squareup.okhttp3:okhttp-bom:4.12.0"
+        const val OKHTTP = "com.squareup.okhttp3:okhttp"
+        const val LOGGING_INTERCEPTOR = "com.squareup.okhttp3:logging-interceptor"
+    }
 
-    object Coroutines {}
+    object Coroutines {
+        const val COROUTINES = "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.8.0"
+    }
 
-    object NavComponent {}
+    object NavComponent {
+    }
 }
