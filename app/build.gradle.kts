@@ -1,6 +1,8 @@
 plugins {
-    id("com.android.application")
-    id("org.jetbrains.kotlin.android")
+    alias(libs.plugins.android.application)
+    alias(libs.plugins.kotlin.android)
+    alias(libs.plugins.kotlin.kapt)
+    alias(libs.plugins.hilt.android)
 }
 
 android {
@@ -41,6 +43,9 @@ android {
             excludes += "/META-INF/{AL2.0,LGPL2.1}"
         }
     }
+    kapt {
+        correctErrorTypes = true
+    }
 }
 
 dependencies {
@@ -48,6 +53,9 @@ dependencies {
     implementation (project (":data"))
     implementation (project (":presentation"))
     implementation (project (":core"))
+
+    implementation(libs.hilt)
+    kapt(libs.hilt.compiler)
 
     testImplementation(Dependency.TestTool.JUNIT)
     androidTestImplementation(Dependency.AndroidTest.TEST_JUNIT)
