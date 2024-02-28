@@ -1,6 +1,7 @@
 import Versions.LIFECYCLE_VERSION
 import Versions.NAV_VERSION
 
+//TODO DEPRECATED
 object Versions {
     const val LIFECYCLE_VERSION = "2.7.0"
     const val NAV_VERSION = "2.7.7"

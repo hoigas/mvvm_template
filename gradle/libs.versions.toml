@@ -1,4 +1,6 @@
-#버전 카탈로그 설명: https://developer.android.com/build/migrate-to-catalogs?hl=ko
+#버전 카탈로그 설명:
+#- https://developer.android.com/build/migrate-to-catalogs?hl=ko
+#- https://cjconnect.atlassian.net/issues/?filter=10229
 [versions]
 agp = "8.2.2"
 org-jetbrains-kotlin-android = "1.9.22"
